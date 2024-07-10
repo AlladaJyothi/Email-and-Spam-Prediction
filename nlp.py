@@ -14,7 +14,7 @@ bow=pickle.load(open("bow.pkl",'rb'))
 
 
 email = st.text_input('Enter the Email:')
-    if st.button("Submit"):
+if st.button("Submit"):
     data = bow.transform([email]).toarray() 
     spam_ham = model.predict(data)[0]
     spam_ham
