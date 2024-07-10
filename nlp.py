@@ -6,7 +6,7 @@ from sklearn.naive_bayes import MultinomialNB
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.naive_bayes import MultinomialNB as nb
 
-st.image("inno_image.webp")
+st.image("inno_image.webp",width=200)
 name=st.title('Email Spam and Ham Prediction')
 
 model=pickle.load(open("model.pkl",'rb'))
@@ -19,5 +19,5 @@ spam_ham = model.predict(data)[0]
 spam_ham
 
 if spam_ham=='spam':
-    st.image("spam image.PNG")
+    st.image("spam image.PNG",width=200)
 
