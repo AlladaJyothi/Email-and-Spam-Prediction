@@ -20,5 +20,5 @@ if st.button("Submit"):
     spam_ham
 
     if spam_ham=='spam':
-        st.image(r"C:\Users\DELL\Pictures\spam image.PNG")
+        st.image("spam image.PNG")
 
